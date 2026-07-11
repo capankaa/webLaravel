@@ -7,10 +7,10 @@
 ## 📸 Screenshot Aplikasi
 
 ### Halaman Home
-![Pundit Bola Home Page](.screencapture-127-0-0-1-8000-2026-07-12-03_16_07.png)
+![Pundit Bola Home Page](./public/images/screencapture-127-0-0-1-8000-2026-07-12-03_16_07.png)
 
 ### Login
-![Detail Artikel](.screencapture-127-0-0-1-8000-login-2026-07-12-03_14_59.png)
+![Detail Artikel](./public/images/screencapture-127-0-0-1-8000-login-2026-07-12-03_14_59.png)
 
 ## ✨ Fitur Utama
 
