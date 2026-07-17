@@ -13,9 +13,10 @@
 ![Detail Artikel](./public/images/screencapture-127-0-0-1-8000-login-2026-07-12-03_14_59.png)
 
 ## Fitur CRUD
-![CRUD](.public/images/screencapture-127-0-0-1-8000-admin-posts-2026-07-17-21_51_09.png)
-(screencapture-127-0-0-1-8000-admin-posts-create-2026-07-17-21_51_20.png)
 
+![CRUD - Daftar Post](./public/images/screencapture-127-0-0-1-8000-admin-posts-2026-07-17-21_51_09.png)
+
+![CRUD - Tambah Post](./public/images/screencapture-127-0-0-1-8000-admin-posts-create-2026-07-17-21_51_20.png)
 
 ## ✨ Fitur Utama
 
