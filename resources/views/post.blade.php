@@ -8,7 +8,7 @@
 
 <div class="grid-two" style="margin-top: 1.5rem;">
     <!-- Main Content -->
-    <article class="card" style="padding: 2rem; border: none; border-bottom: 1px solid var(--border); border-radius: 0; background: transparent;">
+    <article class="card" style="padding: 1.5rem;">
         <div style="margin-bottom: 1.5rem;">
             <div class="meta" style="margin-bottom: 1rem;">
                 <span class="publisher" style="font-size: 0.95rem;">{{ $post->publisher ?? 'Berita Bola' }}</span>
@@ -20,18 +20,18 @@
 
         @if($post->image_url)
             <figure style="margin: 0 0 2rem;">
-                <img class="post-image" src="{{ $post->image_url }}" alt="{{ $post->title }}" style="height: auto; max-height: 500px; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                <img class="post-image" src="{{ $post->image_url }}" alt="{{ $post->title }}" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: var(--radius); margin-bottom: 0.5rem; display: block;">
                 <figcaption style="color: var(--muted); font-size: 0.85rem; text-align: center;">Ilustrasi: {{ $post->title }}</figcaption>
             </figure>
         @endif
 
         <div class="post-content" style="font-size: 1.1rem; color: #333; line-height: 1.8;">
             <p>{{ $post->content }}</p>
-            <p><strong>Sumber:</strong> {{ $post->publisher ?? 'Tim Redaksi Berita Bola' }}</p>
+            <p><strong>Kategori:</strong> {{ $post->publisher ?? 'Umum' }}</p>
         </div>
 
         <div style="margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
-            <a class="nav-button" href="{{ route('posts.index') }}" style="display: inline-block;">&larr; Indeks Berita</a>
+            <a class="nav-button" href="{{ route('posts.index') }}" style="display: inline-block;">&larr; Kembali ke Daftar Berita</a>
         </div>
     </article>
 

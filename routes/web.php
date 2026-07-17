@@ -19,7 +19,10 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 // Halaman yang butuh login (protected)
 Route::middleware('auth')->group(function () {
-Route::get('/home', function () {
-return view('home');
-});
+    Route::get('/home', function () {
+        return view('home');
+    });
+    
+    // Rute admin untuk kelola berita
+    Route::resource('admin/posts', App\Http\Controllers\Admin\PostController::class)->names('admin.posts');
 });

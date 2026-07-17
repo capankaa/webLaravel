@@ -6,8 +6,8 @@
     use Carbon\Carbon;
 @endphp
 
-<div class="card" style="margin-top: 1.5rem; padding: 2rem;">
-    <h2 class="section-title">Indeks Berita</h2>
+<div class="card" style="margin-top: 1.5rem; padding: 1.5rem;">
+    <h2 class="section-title">Cari Berita</h2>
     <p class="card-subtitle" style="margin-bottom: 1.5rem;">Cari berita bola terbaru dan tren transfer. Gunakan form di bawah untuk menemukan artikel yang kamu butuhkan.</p>
 
     <form action="{{ route('posts.index') }}" method="get" class="search-form" style="display: flex; gap: 1rem;">
@@ -18,7 +18,7 @@
 
 <div class="stack" style="margin-top: 2rem;">
     @if($posts->isEmpty())
-        <div class="card" style="padding: 2rem; text-align: center;">
+        <div class="card" style="padding: 1.5rem; text-align: center;">
             <h3 class="section-title" style="border: none; padding: 0;">Belum ada berita yang ditemukan.</h3>
             <p class="card-subtitle">Coba kata kunci lain atau kunjungi halaman beranda untuk melihat highlight berita terbaru.</p>
         </div>
@@ -26,7 +26,7 @@
 
     <div class="stack">
         @foreach($posts as $post)
-            <article class="story-card" style="align-items: flex-start; padding: 1.5rem;">
+            <article class="story-card" style="align-items: flex-start;">
                 <img class="story-image" style="width: 280px; height: 160px;" src="{{ $post->image_url ?: 'https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80' }}" alt="{{ $post->title }}">
                 <div class="story-content" style="justify-content: flex-start;">
                     <div class="meta" style="margin-top: 0; margin-bottom: 0.5rem;">
